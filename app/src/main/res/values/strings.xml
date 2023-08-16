@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">All Language Translator</string>
+    <string name="firebase_name">AppAllLanguageTranslator</string>
+    <string name="firebase_key_name">ALT_API_KEY</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="text_translator">Text Translator</string>
+    <string name="voice_translator">Voice Translator</string>
+    <string name="photo_translator">Photo Translator</string>
+    <string name="multi_translation">Multi-Translation</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="share_app">Share App</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="terms_and_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="title_1">Say Hello! to the world with any of Languages..</string>
+    <string name="desc_1">Unlock the world of languages and connect with anyone, anywhere, anytime!</string>
+    <string name="title_2">Speak ! Type ! Snap !</string>
+    <string name="desc_2">Communicate in over 100 languages with ease by using our language translator app</string>
+    <string name="let_s_get_started">Let’s Get Started</string>
+    <string name="i_agreed_to">I Agreed to Privacy policy &amp; Terms &amp; Conditions</string>
+    <string name="translate">Translate</string>
+    <string name="voice">Voice</string>
+    <string name="camera">Camera</string>
+    <string name="multi_trans">Multi-Trans</string>
+    <string name="auto_detect">Auto Detect</string>
+    <string name="start_typing_your_text_here">Start typing your text here..</string>
+    <string name="please_type_something_to_translate">Please type something to translate.</string>
+    <string name="select_language_to_translate">Select Language to Translate</string>
+    <string name="next">Next</string>
+    <string name="search_your_language">Search your Language</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="retake"><u>Retake</u></string>
+    <string name="multi_translator">Multi Translator</string>
+
+    <string name="privacypolicy">Posting rules you should be taking care of before you start interaction on our website/application:
+    \n\nAssuring you carry the rights and eligibility to post any form of content you are about to share. We never permit nudism on application/website. We won\'t allow posting of sexually explicit content, sexually explicit text, images, or audio content depicting extreme sexual acts such as acts of posting Content that drives traffic to pornographic online services. Please note that we may make exceptions based on artistic, educational, historical, documentary, or scientific nature, or where there are other considerable benefits to the public at large.
+    \n\nWe don\'t permit encouragement or applaud towards terrorism, formed crime scenes or hate association groups on our application/website. Attempting to sell sexual services or weapons and harmful drugs are also not permitted. We will remove reasonable threats of severity, hate arousing content/speech and the intentionally pointing of private individuals. We do not permit attacks/abuse based on skin colour, native, sex, gender, gender identity, sexual orientation, religion, disability or disease.
+    \n\nGraphic violence is not allowed and we may remove videos or images of intense, graphic violence to make sure our application/website stays appropriate for everyone.
+        \n\nIf anyone or any account is spotted doing the above restricted activities they can be booked and arrested for the same. If viewers spot any violations of the above rules they have the right to report the content to us by using the report feature given in our application/ website.\n\n</string>
+
+</resources>

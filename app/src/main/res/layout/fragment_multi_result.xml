@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.multi.MultiResultFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="8dp">
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_back_circle" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/multi_translator"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_settings"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_settings_24" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/adsView0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"/>
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:descendantFocusability="afterDescendants"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_from_language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:gravity="center"
+                        android:text="English"
+                        android:textColor="@color/primary"
+                        android:textSize="18sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/rect_round_stroke_12"
+                        android:padding="16dp"
+                        >
+                        <EditText
+                            android:id="@+id/et_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:maxLines="8"
+                            android:gravity="start"
+                            android:inputType="text|textMultiLine"
+                            android:background="@color/transparent"
+                            android:lineSpacingMultiplier="1"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:hint="@string/start_typing_your_text_here"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp"
+                            >
+                            <ImageView
+                                android:id="@+id/btn_paste"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_paste"
+                                android:padding="8dp"
+                                />
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                />
+
+                            <ProgressBar
+                                android:id="@+id/progress_bar"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <TextView
+                                android:id="@+id/btn_translate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_background_disabled"
+                                android:text="@string/translate"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+               <!--     <LinearLayout
+                        android:id="@+id/adsView"
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:orientation="vertical"
+                        android:layout_margin="8dp"
+                        />-->
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/result_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        android:orientation="vertical"
+                        tools:listitem="@layout/view_translate_list"
+                        />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</layout>

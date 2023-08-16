@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".ui.voice.RecordVoiceFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_back_circle" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/voice_translator"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+            <ImageView
+                android:id="@+id/btn_settings"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_settings_24" />
+
+        </LinearLayout>
+
+     <!--   <LinearLayout
+            android:id="@+id/adsView0"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="4dp"/>-->
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:descendantFocusability="afterDescendants"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:id="@+id/adsView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img_voice_ads"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Speak into the mic and communicate with ease"
+                    android:textColor="@color/primary"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/et_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:maxLines="8"
+                    android:gravity="center"
+                    android:inputType="text|textMultiLine"
+                    android:layout_margin="16dp"
+                    android:padding="16dp"
+                    android:background="@drawable/rect_round_stroke_12"
+                    android:lineSpacingMultiplier="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:hint="Tap on the mic to \ntranslate the language"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_record"
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/btn_translate"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_background_enabled"
+                    android:text="@string/translate"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/btn_retake"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/retake"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/primary"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:paddingBottom="8dp"
+                    />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

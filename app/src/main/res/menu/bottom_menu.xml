@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_text"
+        android:icon="@drawable/ic_translate"
+        android:title="@string/translate" />
+    <item
+        android:id="@+id/nav_voice"
+        android:icon="@drawable/ic_voice"
+        android:title="@string/voice" />
+    <item
+        android:id="@+id/nav_camera"
+        android:icon="@drawable/ic_camera"
+        android:title="@string/camera" />
+    <item
+        android:id="@+id/nav_dictionary"
+        android:icon="@drawable/ic_dictionary"
+        android:title="@string/dictionary" />
+    <item
+        android:id="@+id/nav_multi"
+        android:icon="@drawable/ic_multi_translate"
+        android:title="@string/multi_trans" />
+
+</menu>

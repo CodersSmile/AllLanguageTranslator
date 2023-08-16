@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "394523700746",
+    "firebase_url": "https://colorcallerscreen-199e2-default-rtdb.firebaseio.com",
+    "project_id": "colorcallerscreen-199e2",
+    "storage_bucket": "colorcallerscreen-199e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394523700746:android:4784a5f3cf92c4a487f9f3",
+        "android_client_info": {
+          "package_name": "com.alltranslator.voicetotext.languagetranslator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394523700746-gslqbqfjth4fu015bn2hakqnpt88utnm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alltranslator.voicetotext.languagetranslator",
+            "certificate_hash": "d21add4b8a9a3bb96e6421668b6481a72061701f"
+          }
+        },
+        {
+          "client_id": "394523700746-5qpdjh697a5kbv71n6vdpgiiqbg2747d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6zDFS7SrM1qHH_XRfONFXuCXPdF9srts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394523700746-5qpdjh697a5kbv71n6vdpgiiqbg2747d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394523700746:android:7ed5430c8b2b530987f9f3",
+        "android_client_info": {
+          "package_name": "com.amazingtheme.colorcaller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394523700746-0op84ltt4k8sm24a0qcj3rsa4pm0m2c6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amazingtheme.colorcaller",
+            "certificate_hash": "d21add4b8a9a3bb96e6421668b6481a72061701f"
+          }
+        },
+        {
+          "client_id": "394523700746-5qpdjh697a5kbv71n6vdpgiiqbg2747d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6zDFS7SrM1qHH_XRfONFXuCXPdF9srts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394523700746-5qpdjh697a5kbv71n6vdpgiiqbg2747d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394523700746:android:69052e952a56f63487f9f3",
+        "android_client_info": {
+          "package_name": "com.amazingtheme.colorcaller.fancyfonts.fancy.keyboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394523700746-5qpdjh697a5kbv71n6vdpgiiqbg2747d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6zDFS7SrM1qHH_XRfONFXuCXPdF9srts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394523700746-5qpdjh697a5kbv71n6vdpgiiqbg2747d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

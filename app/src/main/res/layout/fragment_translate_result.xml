@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".ui.voice.TranslateResultFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_back_circle" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/voice_translator"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+            <ImageView
+                android:id="@+id/btn_settings"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_settings_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/adsView0"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"/>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:descendantFocusability="afterDescendants"
+                >
+
+                <TextView
+                    android:id="@+id/tv_from_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:gravity="center"
+                    android:text="English"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rect_round_stroke_12"
+                    android:padding="16dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:maxLines="8"
+                        android:gravity="start"
+                        android:background="@color/transparent"
+                        android:lineSpacingMultiplier="1"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:gravity="end"
+                        >
+
+                        <ImageView
+                            android:id="@+id/btn_share1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_share_black"
+                            android:padding="8dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/btn_speaker1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_speaker"
+                            android:padding="8dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/btn_copy1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_copy"
+                            android:padding="8dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/btn_zoom1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_zoom"
+                            android:padding="8dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tv_to_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:gravity="center"
+                    android:text="Hindi"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rect_round_stroke_12"
+                    android:padding="16dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:maxLines="8"
+                        android:gravity="start"
+                        android:background="@color/transparent"
+                        android:lineSpacingMultiplier="1"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:gravity="end"
+                        >
+
+                        <ImageView
+                            android:id="@+id/btn_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_share_black"
+                            android:padding="8dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/btn_speaker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_speaker"
+                            android:padding="8dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/btn_copy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_copy"
+                            android:padding="8dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/btn_zoom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_zoom"
+                            android:padding="8dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

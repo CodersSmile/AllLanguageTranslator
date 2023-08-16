@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".ui.voice.VoiceFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/voice_translator"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/btn_settings"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_settings_24" />
+
+        </LinearLayout>
+
+        <!-- <LinearLayout
+             android:id="@+id/adsView0"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:background="@color/primary"
+             android:gravity="center"
+             android:orientation="horizontal"
+             android:paddingHorizontal="16dp"
+             android:paddingVertical="4dp"/>-->
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text=" Select your language > Select the Translational Language > Start Button "
+                    android:textColor="@color/primary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:gravity="center"
+                    android:letterSpacing="0.02"
+                    android:text="@string/choose_language"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="From"
+                            android:textColor="@color/black_5"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/btn_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/rect_round_stroke_12"
+                            android:drawablePadding="8dp"
+                            android:drawableTint="@color/black_5"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:paddingHorizontal="16dp"
+                            android:singleLine="true"
+                            android:text="English"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:drawableEndCompat="@drawable/baseline_keyboard_arrow_down_24" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/btn_swap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_swap_primary" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:textColor="@color/black_5"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/btn_output"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/rect_round_stroke_12"
+                            android:drawablePadding="8dp"
+                            android:drawableTint="@color/black_5"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:paddingHorizontal="16dp"
+                            android:singleLine="true"
+                            android:text="Hindi"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:drawableEndCompat="@drawable/baseline_keyboard_arrow_down_24" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/btn_background_enabled"
+                    android:gravity="center"
+                    android:text="Start"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:id="@+id/adsView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/img_voice_ads"
+                            android:scaleType="centerCrop"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>
